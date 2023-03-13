@@ -8844,15 +8844,16 @@ _.at=n
 _.ax=o
 _.ay=p
 _.ch=q},
-zr:function zr(a,b,c,d){var _=this
+zr:function zr(a,b,c,d,e){var _=this
 _.w=a
 _.x=b
+_.y=c
 _.Q=-1
 _.as=!1
 _.ay=_.ax=null
-_.a=c
+_.a=d
 _.y1$=0
-_.y2$=d
+_.y2$=e
 _.ao$=_.aB$=0
 _.ap$=_.aw$=!1},
 a3H:function a3H(a){this.a=a},
@@ -46300,7 +46301,7 @@ q=3
 n=new A.bm(new A.au($.ah,t.x_),t.gM)
 o.ay=$.pw().Wj().vE(new A.a3H(o))
 s=6
-return A.H($.pw().o2(o.w,o.x,!0),$async$eu)
+return A.H($.pw().o2(o.w,o.x,!1),$async$eu)
 case 6:l=a1
 o.Q=l
 l=$.pw().Wi(l)
@@ -46531,7 +46532,7 @@ break
 case 6:case 1:return A.J(q,r)
 case 2:return A.I(o,r)}})
 return A.K($async$kF,r)},
-o2(a,b,c){return this.akS(a,b,!0)},
+o2(a,b,c){return this.akS(a,b,!1)},
 akS(a,b,c){var s=0,r=A.L(t.S),q,p=2,o,n=this,m,l,k,j,i,h,g
 var $async$o2=A.M(function(d,e){if(d===1){o=e
 s=p}while(true)switch(s){case 0:p=4
@@ -46539,7 +46540,7 @@ k=n.agk(b)
 j=t.N
 i=t.z
 s=7
-return A.H(B.em.vy("create",A.aB(["cameraName",a.a,"resolutionPreset",k,"enableAudio",!0],j,i),j,i),$async$o2)
+return A.H(B.em.vy("create",A.aB(["cameraName",a.a,"resolutionPreset",k,"enableAudio",!1],j,i),j,i),$async$o2)
 case 7:m=e
 i=m
 i.toString
@@ -46984,7 +46985,7 @@ break
 case 6:case 1:return A.J(q,r)
 case 2:return A.I(o,r)}})
 return A.K($async$kF,r)},
-o2(a,b,c){return this.akR(a,b,!0)},
+o2(a,b,c){return this.akR(a,b,!1)},
 akR(a,b,c){var s=0,r=A.L(t.S),q,p=this,o,n,m,l,k,j,i,h,g,f
 var $async$o2=A.M(function(d,a0){if(d===1)return A.I(a0,r)
 while(true)switch(s){case 0:try{i=p.d
@@ -47000,7 +47001,7 @@ m=h
 i=p.a
 l=i.ap3(b)
 g=m!=null?new A.NC(m):null
-k=A.aNz(i,A.aNB(new A.u1(!0),new A.xk(g,new A.FK(B.c.p(l.a)),new A.FK(B.c.p(l.b)),n.a)),o)
+k=A.aNz(i,A.aNB(new A.u1(!1),new A.xk(g,new A.FK(B.c.p(l.a)),new A.FK(B.c.p(l.b)),n.a)),o)
 p.b.l(0,o,k)
 q=o
 s=1
@@ -93374,7 +93375,7 @@ if(s.c!=null)s.af(new A.ap5())}},
 Vl(){var s,r
 if($.aKk())s=J.yK($.aBO)
 else s=J.yL($.aBO)
-r=new A.zr(s,B.Uw,B.oU,$.bP())
+r=new A.zr(s,B.Uw,!1,B.oU,$.bP())
 r.te(B.oU)
 this.d=r
 r.Z(0,new A.ap7(this))
@@ -93387,9 +93388,9 @@ return A.H(A.a2e(a),$async$ut)
 case 2:m=c
 l=B.b.p(m.gaW(m))
 k=B.c.p(m.gaU(m)*0.37)
-Math.min(m.gaW(m),m.gaU(m))
+B.b.p(m.gaU(m))
 q=B.c.dw(m.gaW(m)-Math.max(l,m.gaU(m)),1.8)
-p=B.c.dw(m.gaU(m)-Math.min(m.gaW(m),m.gaU(m)),1.4)
+p=B.c.dw(m.gaU(m)-Math.min(m.gaW(m),m.gaU(m)),1.2)
 o=new A.nu(null)
 o.sCM(new A.Mk(a,o))
 n=o.c
@@ -102715,7 +102716,7 @@ B.Uu=new A.rk(3,"unstable")
 B.bM=new A.wp(0,"identical")
 B.Uv=new A.wp(2,"paint")
 B.b0=new A.wp(3,"layout")
-B.Uw=new A.RU(4,"ultraHigh")
+B.Uw=new A.RU(3,"veryHigh")
 B.ez=new A.oA(0,"RESIZE")
 B.bx=new A.oA(1,"AUTOSCALE")
 B.zb=new A.oA(2,"AUTOSCALEDOWN")
