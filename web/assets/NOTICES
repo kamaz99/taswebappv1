@@ -4820,6 +4820,7 @@ camera_platform_interface
 camera_web
 cross_file
 flutter_plugin_android_lifecycle
+image_picker_platform_interface
 path_provider
 path_provider_android
 path_provider_foundation
